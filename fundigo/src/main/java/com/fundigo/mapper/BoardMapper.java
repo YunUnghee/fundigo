@@ -9,9 +9,6 @@ public interface BoardMapper {
 	public List<BoardVO> getFAQList();
 	public List<BoardVO> getCOMMList();
 	public List<BoardVO> getNOTIList();
-	
-//	게시글 1개에 대한 조회
-	public List<BoardVO> selectOne();
 
 // insertSelectKey
 	public void insertSelectkey(BoardVO board);
@@ -31,11 +28,10 @@ public interface BoardMapper {
 //	게시글 삭제
 	public int delete(Long bno);
 	
-// 게시글 수정
+// 수정(게시글, 조회수, 업데이트 일자)
 	public int update(BoardVO board);
 	public int countup(BoardVO board);
 	public int updateDate(BoardVO board);
 }
 
-//수정일자 수정
 	

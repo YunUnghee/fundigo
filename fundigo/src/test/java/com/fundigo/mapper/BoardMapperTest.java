@@ -91,27 +91,27 @@ public class BoardMapperTest {
 //		log.info(board);
 //	}
 	
-//	@Test
-//	public void testselectOne() {
-//		BoardVO board = mapper.selectOne(5L);
-//		log.info(board);
-//	}
+	@Test
+	public void testselectOne() {
+		BoardVO board = mapper.selectOne(23L);
+		log.info(board);
+	}
 //	
 //	@Test
 //	public void testDelete() {
 //		log.info("DELETE COUNT: "+mapper.delete(4L));
 //	}
 	
-	@Test
-	public void testUpdate() {
-		BoardVO board = new BoardVO();
-		//실행 전에 존재하는 번호인지 확인할 것
-		board.setBno(7L);
-		board.setTitle("수정되었습니다");
-		board.setContent("내용이 수정되었습니다.");
-		board.setId("test");
-		
-		int count = mapper.update(board);
-		log.info("UPDATE COUNT: "+count);
-	}
+//	@Test
+//	public void testUpdate() {
+//		BoardVO board = new BoardVO();
+//		//실행 전에 존재하는 번호인지 확인할 것
+//		board.setBno(7L);
+//		board.setTitle("수정되었습니다");
+//		board.setContent("내용이 수정되었습니다.");
+//		board.setId("test");
+//		
+//		int count = mapper.update(board);
+//		log.info("UPDATE COUNT: "+count);
+//	}
 }
