@@ -77,5 +77,8 @@ public class BoardServiceImpl  implements BoardService{
 		log.info("countup.....");
 		return mapper.countup(board) == 1;
 	}
-	
+	public boolean updateDate(BoardVO board) {
+		log.info("updateDate......");
+		return mapper.updateDate(board) == 1;
+	}
 }

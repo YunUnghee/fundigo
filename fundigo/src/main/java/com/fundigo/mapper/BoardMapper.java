@@ -34,4 +34,8 @@ public interface BoardMapper {
 // 게시글 수정
 	public int update(BoardVO board);
 	public int countup(BoardVO board);
+	public int updateDate(BoardVO board);
 }
+
+//수정일자 수정
+	

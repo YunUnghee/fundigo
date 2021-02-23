@@ -14,6 +14,7 @@ public interface BoardService {
 	
 	public boolean modify(BoardVO board);
 	public boolean countup(BoardVO board); 
+	public boolean updateDate(BoardVO board);
 	
 	public boolean remove(Long bno);
 	
@@ -21,4 +22,6 @@ public interface BoardService {
 	public List<BoardVO> getFAQList();
 	public List<BoardVO> getCOMMList();
 	public List<BoardVO> getNOTIList();
+	
+	
 }

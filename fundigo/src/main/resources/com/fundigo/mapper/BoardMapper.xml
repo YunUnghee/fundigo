@@ -79,5 +79,7 @@
 	<update id="countup">
 		UPDATE BOARD SET READCOUNT = READCOUNT+1 WHERE BNO=#{bno}
 	</update>
-
+	<update id="updateDate">
+		UPDATE BOARD SET updatedate = TO_DATE(#{updateDate}, 'yy/mm/dd') WHERE BNO = #{bno}
+	</update>
 </mapper>
